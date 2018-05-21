@@ -107,6 +107,18 @@
 
         </div>
     </div>
+
+
+
+
+<table>
+	<tr>
+		<td>Product 1, Subscribe <span class="paddle-gross">$20</span> lifetime subscription<td>
+		<td><button class="js-buy">Buy Now!</button><td>
+	</tr>
+</table>
+
+
     <footer id="footer">
 						<ul class="icons">
 							<li><a href="https://uk.linkedin.com/in/joana-marques-6749b632" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
@@ -138,6 +150,26 @@
 			<script src="../js/skel.min.js"></script>
 			<script src="../js/util.js"></script>
 			<script src="../js/main.js"></script>
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  
+<script src="https://cdn.paddle.com/paddle/paddle.js"></script>
+<script type="text/javascript">
+
+    Paddle.Setup({
+		vendor: 30841//17506//
+	});
+	
+
+		jQuery('.js-buy').click(function() {
+		Paddle.Checkout.open({
+			product:530802
+			});
+		});
+		
+	
 
            
 
