@@ -1,0 +1,46 @@
+<html>
+<head><head>
+
+<body>
+
+
+<table>
+	<tr>
+		<!--<td> <div  data-product="521950" data-title="1 mes" data-passthrough="ProductId=ProductId=2273607;UserId=" data-message="" data-redirect="http://www.freepdfconvert.com" class="price " data-locale="es">Buy Now!</div><td>
+        -->
+        	<td><button class="js-buy">Buy Now!</button><td>
+
+
+
+<body>
+
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  
+<script src="https://cdn.paddle.com/paddle/paddle.js"></script>
+<script type="text/javascript">
+    Paddle.Environment.set('staging');
+    Paddle.Setup({
+		vendor: 28588
+	});
+	
+	
+
+	
+
+		$('.js-buy').click(function() {
+		Paddle.Checkout.open({
+			product:526821,
+            checkout_variant:"Multipage-radio-payment"
+            
+          
+		});
+		
+		
+	});
+ 
+
+</script>
+    </body>
