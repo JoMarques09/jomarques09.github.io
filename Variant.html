@@ -21,9 +21,10 @@
   
 <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
 <script type="text/javascript">
-    Paddle.Environment.set('staging');
+    //Paddle.Environment.set('staging');
     Paddle.Setup({
-		vendor: 28588
+		vendor: 28588,
+	    checkoutVariant:'compact'
 	});
 	
 	
@@ -32,8 +33,8 @@
 
 		$('.js-buy').click(function() {
 		Paddle.Checkout.open({
-			product:526821,
-            checkout_variant:"Multipage-radio-payment"
+			product:521961,
+            
             
           
 		});
