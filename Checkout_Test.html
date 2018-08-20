@@ -5,11 +5,14 @@
 
 
 <table>
-	<tr>
+	<!--<tr>
 		<td> <a href="#!" class="paddle_button" data-product="532899" id="submitMail" data-product="532899" data-init="true">Buy Now!</a><td>
 		
-	</tr>
-    
+	</tr>-->
+	
+	<tr>
+		<td><button class="js-buy">Buy Now!</button><td>
+    	</tr>
 </table>
 
 
@@ -24,8 +27,17 @@
 <script type="text/javascript">
     
     Paddle.Setup({
-		vendor: 32079//17506//
+		vendor: 34179//jojo 
 	});
+	
+	
+	$('.js-buy').click(function() {
+		Paddle.Checkout.open({
+			product:536798
+		});
+
+	});
+    
 </script>
 	
 	 </body>
